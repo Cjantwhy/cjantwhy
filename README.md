@@ -1,99 +1,55 @@
 <div align="center">
 
-## Hi, I'm Cjantwhy 👋
+## Hi, I'm Andy Wang 👋
 
-**Backend Engineer · 后端开发工程师**
+**Python Automation & Web Scraping · Internal Tools & Dashboards**
 
-I build integrations that keep your tools in sync: spreadsheets, forms, issue trackers, chat, and the APIs your business already runs on.
+I build small automation tools — web scrapers, data sync, internal dashboards and AI-assisted utilities — in small, tested stages, so the work stays under control.
 
-[English](#english) · [中文](#chinese) · [📫 cjantwhy@gmail.com](mailto:cjantwhy@gmail.com)
+[Website](https://blog.cjantwhy.com) · [Upwork](https://www.upwork.com/freelancers/~013f32b18b1b65d90c) · [📫 cjantwhy@gmail.com](mailto:cjantwhy@gmail.com) · [中文](#chinese)
 
 </div>
 
 ---
 
-<a id="english"></a>
+### 🛠 What I can help with
 
-## 🇬🇧 English
+- **Web scraping**: collect prices, listings and other public data on a schedule, delivered as CSV, Google Sheets or a database
+- **Workflow automation**: connect Google Sheets, Jira, Slack and other tools through their APIs, so nobody has to copy data by hand
+- **Internal tools and dashboards**: small admin panels for viewing and managing your data
+- **AI-assisted tools**: an LLM step for classification, extraction or transcription
 
-### ⭐ Featured Project: [issue-sync](https://github.com/Cjantwhy/issue-sync)
+### ✅ Some things I have done
 
-**Two-way sync between Google Sheets and Jira Cloud, with AI triage, Slack notifications and a dashboard.**
+- Migrated **70 shared spreadsheets** from Tencent Docs to Feishu with a staged script. Validation caught at least 15 problem sheets before anything changed, and **no rollback was ever needed**.
+- Maintained a company's internal R&D platform end to end, including an automated testing platform, release reports and a SCADA alarm module.
+- Maintained a two-way issue sync in production between an internal R&D platform, ZenTao (a Jira-style tracker) and 70+ partner spreadsheets.
+- Integrated the Steam inventory API and owned the Elasticsearch product search for an e-commerce platform; wrote Python price-monitoring scripts.
 
-People report problems where they already work, in a shared Google Sheet or a Google Form. issue-sync turns each row into a Jira ticket, uses an LLM to set the category, urgency and team, assigns it, and notifies the assignee in Slack. Status changes and comments in Jira flow back to the sheet.
+### ⭐ Featured project: [issue-sync](https://github.com/Cjantwhy/issue-sync)
 
-- **Reliable by design**: one ticket per row even under failures and retries, loop-free two-way sync, and a reconciliation job every 15 minutes that repairs missed webhooks
-- **AI suggests, rules decide, people override**: all three are recorded, and the dashboard shows how often the model is right
-- **Production-ready**: Docker Compose deployment, HMAC-verified webhooks, CI with a full test suite against PostgreSQL
+Two-way sync between Google Sheets and Jira Cloud, with AI triage, Slack notifications and a dashboard. Built in 10 milestones, each with end-to-end tests; the decisions log and test suite are public.
 
-`Python` · `FastAPI` · `PostgreSQL` · `Redis` · `HTMX` · `Docker` · `Jira REST API` · `Google Sheets API` · `Slack API` · `OpenAI-compatible LLMs`
+`Python` · `FastAPI` · `PostgreSQL` · `Redis` · `HTMX` · `Docker` · `Jira API` · `Google Sheets API` · `Slack API` · `LLM`
 
-> This project grew out of my day job. I built and maintained the same kind of two-way issue sync in production, between an internal platform, ZenTao (a Jira-style issue tracker) and 70+ shared online spreadsheets used by external partners.
+### 🧭 How I work
 
-### 🛠 What I Can Do for You
+Before writing code, we agree on the goal and split the project into small stages, each with a clear way to check that it is done. I use AI to build quickly, and the stages keep it under control: you can review the result after every stage instead of waiting until the end.
 
-- **Workflow integrations**: connect Google Sheets / Forms, Jira, Slack and other SaaS tools, so data moves on its own instead of being copied by hand
-- **Two-way sync done right**: clear field ownership, idempotent writes, loop prevention, and reconciliation for the cases webhooks miss
-- **AI-assisted triage**: LLM classification with structured output, rule-based overrides, and accuracy evaluation
-- **Third-party API integration**: fetch, normalize and store data from external platforms
-- **Search**: fuzzy search and faceted filtering with Elasticsearch
-- **Python automation**: data processing, data-fix scripts and price monitoring
+### 🧰 Tech stack
 
-### 💼 Experience
-
-**Internal R&D Platform · Backend Developer** (Java / PostgreSQL)
-- Built two-way sync between customer issue reports and ZenTao: issues reported from customer sites become tickets automatically, and progress syncs back.
-- Integrated 70+ external spreadsheets (Feishu Docs / Tencent Docs, the Chinese equivalents of Google Sheets), so external partners could report and track issues in tools they already used.
-
-**E-commerce Platform · Backend Developer** (PHP / MySQL)
-- Integrated the Steam inventory API: fetched user inventories, normalized them into the platform schema and stored them for trading and listings.
-- Owned the Elasticsearch product search, with fuzzy matching and aggregation-based filters.
-- Wrote Python tooling for pre-release data processing and price comparison.
-
-### 🧰 Tech Stack
-
-`Python` · `Java` · `PHP` · `FastAPI` · `PostgreSQL` · `MySQL` · `Redis` · `Elasticsearch` · `Docker` · `REST APIs` · `Webhooks` · `LLM APIs`
+`Python` · `Java` · `PHP` · `FastAPI` · `Spring Boot` · `PostgreSQL` · `MySQL` · `Redis` · `Elasticsearch` · `Docker` · `REST APIs` · `Webhooks` · `LLM APIs`
 
 ### 📫 Contact
 
-Have a workflow that still depends on copy-paste between tools? Email me at [cjantwhy@gmail.com](mailto:cjantwhy@gmail.com).
+If you have a task that still depends on copy and paste, please feel free to email me at [cjantwhy@gmail.com](mailto:cjantwhy@gmail.com). A rough idea is perfectly fine. I reply within 48 hours.
 
 ---
 
 <a id="chinese"></a>
 
-## 🇨🇳 中文
+### 中文
 
-我的工作是把分散在不同平台的数据**接进来、整理好、同步出去**，变成业务能直接用的功能。
+我是王浩宇，后端开发，现在独立接项目。我做小而可靠的自动化工具：网页数据抓取、数据同步、内部管理后台、数据看板，以及带 AI 的小工具。我用 AI 加快开发，但每一步都有明确的验收标准，项目不会失控。
 
-### 🛠 我能提供的服务
-
-- **第三方平台 / API 对接**：接入外部平台数据，完成解析、格式标准化和入库
-- **搜索功能开发**：基于 Elasticsearch 实现模糊搜索、聚合筛选和统计
-- **系统集成与双向同步**：打通内部平台、项目管理工具（禅道、Jira）和在线协作文档（飞书文档、腾讯文档、Google Sheets）
-- **Python 自动化**：批量数据处理、数据修复脚本、商品比价工具
-
-### 💼 工作经历
-
-#### 企业内部研发管理平台 · 后端开发（Java / PostgreSQL）
-
-- **现场问题反馈与禅道同步**：软件部署到客户现场后，使用中遇到的问题会在平台上提交。我负责把这些问题自动同步到禅道，并把处理进度回传平台，实现双向同步。
-- **外部协作打通**：对接 **70 余份**飞书文档、腾讯文档外部表单，让外部合作方能在熟悉的在线文档里反馈和跟进问题，数据自动和内部系统保持一致。
-
-#### 电商平台 · 后端开发（PHP / MySQL）
-
-- **Steam 库存数据对接**：调用 Steam 库存接口获取用户库存，负责数据解析、转换成平台统一的数据格式，再写入 MySQL，为交易和展示提供基础数据。
-- **商品搜索与展示**：负责商品展示页的 Elasticsearch 搜索模块，用查询 DSL 实现模糊搜索，并通过聚合查询支持分类筛选和统计。
-- **数据处理工具**：用 Python 编写脚本，调用内部预留接口，在发版前完成数据处理和修复；开发商品比价脚本，辅助定价决策。
-
-### ⭐ 开源项目
-
-- **[issue-sync](https://github.com/Cjantwhy/issue-sync)**：Google Sheets 与 Jira 双向同步，带 AI 自动分类分派、Slack 通知和看板。思路来自上面的禅道同步项目，这次换成了海外常用的工具链。
-
-### 🧰 技术栈
-
-`Python` · `Java` · `PHP` · `FastAPI` · `PostgreSQL` · `MySQL` · `Redis` · `Elasticsearch` · `Docker` · `禅道` · `飞书文档` · `腾讯文档`
-
-### 📫 联系方式
-
-- 邮箱：[cjantwhy@gmail.com](mailto:cjantwhy@gmail.com)
+更多介绍、项目和文章见我的网站：[blog.cjantwhy.com](https://blog.cjantwhy.com)
