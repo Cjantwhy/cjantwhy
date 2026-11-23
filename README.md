@@ -36,6 +36,11 @@ Two-way sync between Google Sheets and Jira Cloud, with AI triage, Slack notific
 
 Before writing code, we agree on the goal and split the project into small stages, each with a clear way to check that it is done. I use AI to build quickly, and the stages keep it under control: you can review the result after every stage instead of waiting until the end.
 
+### 🎓 Education
+
+- **University of Southern California** · M.S. in Computer Science (Data Science) · 2022 – 2023
+- **Colorado College** · B.A. in Computer Science · 2018 – 2021 · Dean's List
+
 ### 🧰 Tech stack
 
 `Python` · `Java` · `PHP` · `FastAPI` · `Spring Boot` · `PostgreSQL` · `MySQL` · `Redis` · `Elasticsearch` · `Docker` · `REST APIs` · `Webhooks` · `LLM APIs`
